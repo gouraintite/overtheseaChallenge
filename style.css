@@ -1,0 +1,320 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+*{
+
+    font-family: 'Poppins';
+
+}
+html{
+    background-color: black;
+}
+.all{
+    display:grid;
+    grid-template-columns:1fr 10fr 7fr;
+    grid-template-areas:"nav nav nav"
+                        "feelings main second"
+                        "footer footer footer2";
+    background-color:#fff;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}   
+
+.all >*{
+    color: #000;
+    font-size: 1.3rem;
+    padding: 30px;
+    border: 0.1rem solid black;
+}
+.nav{
+    background-color: #fff;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    max-height: 15px;
+}
+.nav > div{
+    font-size: 10px;
+    font-style: italic;
+}
+.nav p{
+    margin-top: -1rem;
+    letter-spacing: 3px;
+    font-family: 'Kanit';
+    font-size: bolder;
+    font-style: normal;
+    font-size:1.5rem ;
+}
+.feelings{
+    grid-area: feelings;
+    min-height: 530px;
+    max-width: 150px;
+}
+.feelings span{
+    display: block;
+    margin-top: -36px;
+    transform: rotate(-90deg);
+    font-size: 91px;
+    width: 523px;
+    height: 499px;
+    font-family:'Noto Serif Display' ;
+}
+.main{
+    background: url("assets/love-dress-white-04.jpeg") no-repeat;
+    background-size: cover;
+    grid-area: main;
+}
+.second{
+    background: url("assets/love-dress-white-02.jpeg") no-repeat;
+    background-size: cover;
+    background-position: 21%;
+    height: 30%;
+    width: 115%;
+    border: 1px solid black;
+    margin-top: 90px;
+    margin-left: -130px;
+    grid-area: second;
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    height:20px;
+    
+}
+.footer2{
+    grid-area: footer2;
+    height:20px;
+    display: flex;
+    justify-content: space-around;
+}
+.dot{
+    position: relative;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 7px;
+}
+.second p{
+    position: relative;
+    margin-top: 20rem;
+    margin-left:14rem;
+}
+.second p > span{
+    position: absolute;
+    width: 83px;
+    height: 2px;
+    content: "";
+    margin-top: 1rem;
+    margin-left: 10px;
+    background-color: #000;
+}
+.second p > span >span::after, .second p > span >span::before{
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 2px;
+    margin-left: 70px;
+    background-color: #000;
+}
+
+.second p > span >span::before{
+    transform: rotate(45deg);
+    margin-top: -4px;
+}
+
+.second p > span >span::after{
+    transform: rotate(-45deg);
+    margin-top: 4px;
+}
+
+img{
+    position:  absolute;
+    top: 29rem;
+    left: 61rem;
+    width: 282px;
+    height: 129px;
+}
+.Ham::after, .Ham::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    right: 3rem;
+}
+
+.Ham::after{
+    margin-top: 8px;
+}
+
+.Ham::before{
+    margin-top: 1px;
+}
+/*
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+*{
+
+    font-family: 'Poppins';
+
+}
+html{
+    background-color: black;
+}
+.all{
+    display:grid;
+    grid-template-columns:1fr 10fr 7fr;
+    grid-template-areas:"nav nav nav"
+                        "feelings main second"
+                        "footer footer footer2";
+    background-color:#fff;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}   
+
+.all >*{
+    color: #000;
+    font-size: 1.3rem;
+    padding: 30px;
+    border: 0.1rem solid black;
+}
+.nav{
+    background-color: #fff;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    max-height: 15px;
+}
+.nav > div{
+    font-size: 10px;
+    font-style: italic;
+}
+.nav p{
+    margin-top: -1rem;
+    letter-spacing: 3px;
+    font-family: 'Kanit';
+    font-size: bolder;
+    font-style: normal;
+    font-size:1.5rem ;
+}
+.feelings{
+    grid-area: feelings;
+    min-height: 530px;
+    max-width: 150px;
+}
+.feelings span{
+    display: block;
+    margin-top: -36px;
+    transform: rotate(-90deg);
+    font-size: 91px;
+    width: 523px;
+    height: 499px;
+    font-family:'Noto Serif Display' ;
+}
+.main{
+    background: url("assets/love-dress-white-04.jpeg") no-repeat;
+    background-size: cover;
+    grid-area: main;
+}
+.second{
+    background: url("assets/love-dress-white-02.jpeg") no-repeat;
+    background-size: cover;
+    background-position: 21%;
+    height: 30%;
+    width: 115%;
+    border: 1px solid black;
+    margin-top: 90px;
+    margin-left: -130px;
+    grid-area: second;
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    height:20px;
+    
+}
+.footer2{
+    grid-area: footer2;
+    height:20px;
+    display: flex;
+    justify-content: space-around;
+}
+.dot{
+    position: relative;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 7px;
+}
+.second p{
+    position: relative;
+    margin-top: 20rem;
+    margin-left:14rem;
+}
+.second p > span{
+    position: absolute;
+    width: 83px;
+    height: 2px;
+    content: "";
+    margin-top: 1rem;
+    margin-left: 10px;
+    background-color: #000;
+}
+.second p > span >span::after, .second p > span >span::before{
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 2px;
+    margin-left: 70px;
+    background-color: #000;
+}
+
+.second p > span >span::before{
+    transform: rotate(45deg);
+    margin-top: -4px;
+}
+
+.second p > span >span::after{
+    transform: rotate(-45deg);
+    margin-top: 4px;
+}
+
+img{
+    position:  absolute;
+    top: 29rem;
+    left: 61rem;
+    width: 282px;
+    height: 129px;
+}
+.Ham::after, .Ham::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    right: 3rem;
+}
+
+.Ham::after{
+    margin-top: 8px;
+}
+
+.Ham::before{
+    margin-top: 1px;
+}*/
